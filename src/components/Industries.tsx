@@ -6,21 +6,27 @@ const Industries = () => {
   const industries = [
     {
       title: "Home Services",
-      description: "Automate appointment reminders, follow-ups, and service confirmations. Reduce no-shows by 70% with intelligent scheduling.",
-      features: ["Appointment Reminders", "Service Follow-ups", "Review Requests", "Emergency Notifications"],
-      icon: "🏠"
+      subtitle: "Cleaners, plumbers, contractors",
+      description: "Follow up on leads instantly and never miss a job. Turn website visitors into booked appointments automatically.",
+      features: ["Lead follow-up within 5 minutes", "Appointment scheduling", "Service reminders", "Review requests"],
+      icon: "🏠",
+      benefit: "37% more jobs booked"
     },
     {
       title: "Retail",
-      description: "Recover abandoned carts, send personalized promotions, and nurture customer relationships at scale.",
-      features: ["Cart Recovery", "Personalized Offers", "Order Updates", "Customer Surveys"],
-      icon: "🛍️"
+      subtitle: "Storefronts, e-commerce, Shopify stores",
+      description: "Recover abandoned carts and turn browsers into buyers. Keep customers coming back with personalized offers.",
+      features: ["Cart abandonment recovery", "Personalized promotions", "Order notifications", "Customer win-back"],
+      icon: "🛍️",
+      benefit: "28% increase in sales"
     },
     {
       title: "Healthcare", 
-      description: "Send HIPAA-compliant patient reminders, test results, and follow-up care instructions automatically.",
-      features: ["Appointment Reminders", "Test Result Notifications", "Medication Reminders", "Follow-up Care"],
-      icon: "🏥"
+      subtitle: "Clinics, physios, dentists",
+      description: "Reduce no-shows and keep patients engaged. Send appointment reminders and follow-up care instructions automatically.",
+      features: ["Appointment reminders", "Follow-up care", "Health check-ins", "HIPAA-compliant messaging"],
+      icon: "🏥",
+      benefit: "65% fewer no-shows"
     }
   ];
 
@@ -29,10 +35,10 @@ const Industries = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Built for Every Industry
+            Built for Service Businesses
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Civion adapts to your business needs with industry-specific AI models and compliance features
+            Whether you're booking appointments, closing sales, or caring for patients — Civion works for your business
           </p>
         </div>
         
@@ -47,6 +53,10 @@ const Industries = () => {
                 <CardTitle className="text-2xl font-bold text-gray-900">
                   {industry.title}
                 </CardTitle>
+                <p className="text-sm text-gray-500 font-medium">{industry.subtitle}</p>
+                <div className="mt-2 inline-block bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">
+                  {industry.benefit}
+                </div>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-gray-600 leading-relaxed">
