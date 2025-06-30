@@ -3,12 +3,31 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
 const Dashboard = () => {
-  const demoSteps = [
-    { step: "1", title: "Upload leads", desc: "Import contacts or connect your CRM" },
-    { step: "2", title: "Choose goal", desc: "Book appointments, recover carts, or follow up" },
-    { step: "3", title: "AI starts conversations", desc: "Personalized messages sent automatically" },
-    { step: "4", title: "See replies", desc: "Monitor responses in real-time" },
-    { step: "5", title: "Book jobs", desc: "Convert conversations into revenue" }
+  const howItWorksSteps = [
+    { 
+      step: "1", 
+      title: "Upload lead list or connect form", 
+      desc: "Import contacts, connect your CRM, or sync web forms",
+      detail: "CSV upload, Zapier integration, or direct form connection"
+    },
+    { 
+      step: "2", 
+      title: "Choose outreach goal", 
+      desc: "Booking, follow-up, reminders, or cart recovery",
+      detail: "Pre-built templates for common service business needs"
+    },
+    { 
+      step: "3", 
+      title: "Civion handles outreach & replies", 
+      desc: "AI sends personalized messages and responds naturally",
+      detail: "SMS, WhatsApp, or email - sounds human, works 24/7"
+    },
+    { 
+      step: "4", 
+      title: "You get booked calls or structured responses", 
+      desc: "Appointments in your calendar, qualified leads in your inbox",
+      detail: "Direct calendar integration and CRM sync"
+    }
   ];
 
   return (
@@ -16,13 +35,13 @@ const Dashboard = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            See How It Works
+            How Civion Works
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From lead to booked job in 60 seconds — watch Civion turn prospects into paying customers
+            From missed lead to booked appointment in minutes — watch Civion turn prospects into paying customers
           </p>
           <div className="mt-6 inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-2 rounded-full">
-            Starting from $97/month
+            Setup takes under 5 minutes
           </div>
         </div>
         
@@ -32,20 +51,21 @@ const Dashboard = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h3 className="text-3xl font-bold text-gray-900">
-                Your 60-second demo flow
+                Simple 4-step process
               </h3>
-              <div className="space-y-4">
-                {demoSteps.map((step, index) => (
+              <div className="space-y-6">
+                {howItWorksSteps.map((step, index) => (
                   <div key={index} className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
+                    <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0">
                       {step.step}
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900">{step.title}</h4>
-                      <p className="text-gray-600 text-sm">{step.desc}</p>
+                    <div className="flex-1">
+                      <h4 className="font-bold text-lg text-gray-900 mb-1">{step.title}</h4>
+                      <p className="text-gray-600 mb-2">{step.desc}</p>
+                      <p className="text-sm text-gray-500 italic">{step.detail}</p>
                     </div>
-                    {index < demoSteps.length - 1 && (
-                      <ArrowRight className="text-gray-300 mt-1" size={16} />
+                    {index < howItWorksSteps.length - 1 && (
+                      <ArrowRight className="text-gray-300 mt-2" size={20} />
                     )}
                   </div>
                 ))}
@@ -53,13 +73,14 @@ const Dashboard = () => {
             </div>
             
             <div className="relative">
-              <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl p-8 h-80 flex items-center justify-center">
+              <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl p-8 h-96 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-white text-2xl">▶️</span>
+                  <div className="w-24 h-24 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl mx-auto mb-6 flex items-center justify-center shadow-lg">
+                    <span className="text-white text-3xl">▶️</span>
                   </div>
-                  <h4 className="text-xl font-semibold text-gray-900 mb-2">Interactive Demo</h4>
-                  <p className="text-gray-600">Click to see Civion in action</p>
+                  <h4 className="text-2xl font-bold text-gray-900 mb-3">See It In Action</h4>
+                  <p className="text-gray-600 mb-4">Watch a 2-minute demo of Civion converting a lead</p>
+                  <div className="text-sm text-blue-600 font-medium">Click to play demo video</div>
                 </div>
               </div>
             </div>

@@ -13,14 +13,11 @@ const Hero = () => {
           <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
             AI-powered outreach for
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> service businesses</span>
-            <br />
-            — respond faster, book more, grow automatically.
           </h1>
           
           <p className="text-xl lg:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Turn missed leads into booked jobs, repeat customers, or happy patients — 
-            <strong className="text-gray-900"> without lifting a finger.</strong> 
-            Civion's AI handles follow-ups, scheduling, and customer communication automatically.
+            Convert missed leads into booked jobs, repeat buyers, or confirmed appointments — 
+            <strong className="text-gray-900"> automatically.</strong>
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -28,7 +25,7 @@ const Hero = () => {
               size="lg" 
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
-              See It In Action
+              See How It Works
             </Button>
             <Button 
               variant="outline" 

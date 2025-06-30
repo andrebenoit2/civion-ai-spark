@@ -6,25 +6,25 @@ const Industries = () => {
   const industries = [
     {
       title: "Home Services",
-      subtitle: "Cleaners, plumbers, contractors",
-      description: "Follow up on leads instantly and never miss a job. Turn website visitors into booked appointments automatically.",
-      features: ["Lead follow-up within 5 minutes", "Appointment scheduling", "Service reminders", "Review requests"],
+      subtitle: "Cleaners, HVAC, plumbing",
+      description: "Follow up on quotes and web leads in seconds. Book more jobs, no chasing required.",
+      features: ["Instant quote follow-ups", "Lead nurturing automation", "Appointment booking", "Service reminders"],
       icon: "🏠",
       benefit: "37% more jobs booked"
     },
     {
-      title: "Retail",
-      subtitle: "Storefronts, e-commerce, Shopify stores",
-      description: "Recover abandoned carts and turn browsers into buyers. Keep customers coming back with personalized offers.",
-      features: ["Cart abandonment recovery", "Personalized promotions", "Order notifications", "Customer win-back"],
+      title: "Retail & eCommerce",
+      subtitle: "Storefronts, Shopify stores",
+      description: "Turn browsers into buyers. Engage abandoned carts and reorders with AI that feels human.",
+      features: ["Abandoned cart recovery", "Reorder campaigns", "Personalized offers", "Customer win-back"],
       icon: "🛍️",
       benefit: "28% increase in sales"
     },
     {
-      title: "Healthcare", 
+      title: "Healthcare & Clinics", 
       subtitle: "Clinics, physios, dentists",
-      description: "Reduce no-shows and keep patients engaged. Send appointment reminders and follow-up care instructions automatically.",
-      features: ["Appointment reminders", "Follow-up care", "Health check-ins", "HIPAA-compliant messaging"],
+      description: "Cut no-shows and free up your front desk. Automate patient reminders and check-ins.",
+      features: ["Appointment reminders", "Check-in automation", "Follow-up care", "HIPAA-compliant messaging"],
       icon: "🏥",
       benefit: "65% fewer no-shows"
     }
